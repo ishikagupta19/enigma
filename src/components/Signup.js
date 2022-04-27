@@ -4,6 +4,7 @@ import logo from "../images/logo1.png";
 import bgimg from '../videos/bgvideo1.mp4'
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AiFillInstagram,  AiFillMail, AiFillFacebook ,AiFillLinkedin, AiFillYoutube, AiOutlineCloudSync} from "react-icons/ai";
+import { hover } from '@testing-library/user-event/dist/hover';
 
 
 
@@ -167,7 +168,7 @@ zIndex: "-1"}}>
                           placeholder="Confirm Password" />
             </div>
             <div class="app-form-group buttons">
-              <input className="form-submit" type="submit" name="signup" id="signup" value="Register" onClick={PostData}/>
+              <button className="form-submit" type="submit" name="signup" id="signup" style={{color: "white"}} value="Register" onClick={PostData}>Register</button>
               {/* <button class="app-form-button">SEND</button> */}
             </div>
            
